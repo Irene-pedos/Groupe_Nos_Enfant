@@ -117,5 +117,89 @@
         { "value": "15+", "label": "Communautés Actives" }
       ]
     }
+  },
+  "volunteer": {
+    "title": "Rejoignez notre Mission",
+    "subtitle": "Votre temps et vos compétences peuvent changer des vies. Devenez bénévole et aidez-nous à autonomiser la prochaine génération au Rwanda.",
+    "roles": {
+      "title": "Opportunités de Bénévolat",
+      "items": [
+        {
+          "id": "role-1",
+          "title": "Mentor pour Jeunes",
+          "description": "Offrez des conseils et du soutien aux jeunes tout au long de leur parcours éducatif et professionnel.",
+          "icon": "Users"
+        },
+        {
+          "id": "role-2",
+          "title": "Instructeur de Compétences",
+          "description": "Partagez votre expertise en couture, informatique ou gestion avec nos étudiants.",
+          "icon": "Briefcase"
+        },
+        {
+          "id": "role-3",
+          "title": "Défenseur Communautaire",
+          "description": "Aidez-nous à sensibiliser et à organiser des événements pour la paix et la réconciliation.",
+          "icon": "Globe"
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Pourquoi devenir bénévole chez GNE ?",
+      "items": [
+        {
+          "title": "Impact Direct",
+          "description": "Voyez la différence immédiate que votre contribution apporte à la vie des enfants et des jeunes."
+        },
+        {
+          "title": "Développement de Compétences",
+          "description": "Améliorez vos compétences en leadership dans un environnement multiculturel porteur de sens."
+        },
+        {
+          "title": "Communauté",
+          "description": "Rejoignez un réseau de personnes passionnées par le changement social et la paix."
+        }
+      ]
+    },
+    "form": {
+      "title": "Candidature au Bénévolat",
+      "subtitle": "Remplissez le formulaire ci-dessous et notre équipe vous contactera sous peu.",
+      "name": "Nom Complet",
+      "email": "Adresse E-mail",
+      "interest": "Domaine d'Intérêt",
+      "message": "Pourquoi souhaitez-vous devenir bénévole chez nous ?",
+      "submit": "Envoyer la Candidature"
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Vous avez des questions sur nos programmes ou souhaitez devenir partenaire ? Nous serions ravis de vous entendre.",
+    "form": {
+      "title": "Envoyez-nous un Message",
+      "name": "Nom Complet",
+      "email": "Adresse E-mail",
+      "subject": "Sujet",
+      "message": "Votre Message",
+      "submit": "Envoyer le message",
+      "success": "Votre message a été envoyé avec succès !"
+    },
+    "info": {
+      "address": {
+        "title": "Notre Bureau",
+        "value": "KN 5 Rd, Kigali, Rwanda"
+      },
+      "email": {
+        "title": "Écrivez-nous",
+        "value": "info@groupe-nos-enfants.org"
+      },
+      "phone": {
+        "title": "Appelez-nous",
+        "value": "+250 788 123 456"
+      },
+      "hours": {
+        "title": "Heures d'ouverture",
+        "value": "Lun - Ven, 8:00 - 17:00"
+      }
+    }
   }
 }
