@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 import en from "@/translations/en.json"
 
 export default async function NewsDetailPage({ params }: { params: { id: string } }) {
@@ -32,9 +33,14 @@ export default async function NewsDetailPage({ params }: { params: { id: string 
         </h1>
       </div>
 
-      <div className="mb-12 aspect-[21/9] w-full overflow-hidden rounded-2xl bg-muted flex items-center justify-center text-muted-foreground">
-        {/* Placeholder for images */}
-        <span className="text-xl">Article Image Placeholder</span>
+      <div className="relative mb-12 aspect-[21/9] w-full overflow-hidden rounded-2xl bg-muted">
+        <Image 
+          src={article.image}
+          alt={article.title}
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
 
       <div className="prose prose-lg dark:prose-invert max-w-none">

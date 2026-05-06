@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 import en from "@/translations/en.json"
 import { EventRegistration } from "@/components/event-registration"
 
@@ -19,9 +20,13 @@ export default function NewsPage() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {news.items.map((item) => (
             <div key={item.id} className="group flex flex-col overflow-hidden rounded-2xl border bg-card text-card-foreground shadow-sm transition-all hover:shadow-lg">
-              <div className="aspect-[16/10] w-full bg-muted flex items-center justify-center text-muted-foreground transition-colors group-hover:bg-muted/80">
-                {/* Placeholder for images */}
-                <span className="font-medium">Image Placeholder</span>
+              <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted transition-colors group-hover:bg-muted/80">
+                <Image 
+                  src={item.image} 
+                  alt={item.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               <div className="flex flex-1 flex-col p-6">
                 <div className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary">
