@@ -1,1 +1,121 @@
-{}
+{
+  "news": {
+    "title": "News & Updates",
+    "subtitle": "Stay informed about our latest activities and the impact we're making together.",
+    "viewAll": "View all news",
+    "readMore": "Read more",
+    "categories": {
+      "all": "All",
+      "empowerment": "Empowerment",
+      "education": "Education",
+      "innovation": "Innovation",
+      "success-story": "Success Story"
+    },
+    "items": [
+      {
+        "id": "news-1",
+        "title": "Empowering Young Mothers: New Vocational Training Cycle Begins",
+        "date": "2026-05-15",
+        "category": "empowerment",
+        "summary": "GNE launches its 5th vocational training cycle in Kigali, supporting 50 young mothers with tailoring and business skills to achieve financial independence.",
+        "image": "/images/news/training-2026.jpg"
+      },
+      {
+        "id": "news-2",
+        "title": "Back-to-School Drive Success: 200 Children Supported",
+        "date": "2026-04-10",
+        "category": "education",
+        "summary": "Thanks to our generous donors, we've successfully provided school supplies and tuition support for 200 children in rural districts for the upcoming term.",
+        "image": "/images/news/education-2026.jpg"
+      },
+      {
+        "id": "news-3",
+        "title": "GNE Youth Innovation Hub: Bridging the Digital Divide",
+        "date": "2026-03-22",
+        "category": "innovation",
+        "summary": "Our new hub in Musanze is now open, providing internet access, digital literacy workshops, and mentorship for aspiring young entrepreneurs.",
+        "image": "/images/news/hub-2026.jpg"
+      }
+    ]
+  },
+  "events": {
+    "title": "Upcoming Events",
+    "subtitle": "Join us and be part of the change. Participate in our upcoming community events and workshops.",
+    "viewAll": "View all events",
+    "register": "Register Now",
+    "items": [
+      {
+        "id": "event-1",
+        "name": "Annual Peace & Reconciliation Youth Summit",
+        "date": "2026-06-20",
+        "time": "09:00 AM - 04:00 PM",
+        "location": "Kigali Convention Centre, Rwanda",
+        "description": "Bringing together 500 youth to discuss peacebuilding, community leadership, and social cohesion in a post-conflict society.",
+        "category": "Summit"
+      },
+      {
+        "id": "event-2",
+        "name": "Community Walk for Education",
+        "date": "2026-07-05",
+        "time": "07:30 AM",
+        "location": "Musanze District Square",
+        "description": "A 5km community walk to raise awareness and funds for our rural education initiatives and school feeding programs.",
+        "category": "Fundraiser"
+      },
+      {
+        "id": "event-3",
+        "name": "Entrepreneurship Mentorship Day",
+        "date": "2026-08-12",
+        "time": "02:00 PM - 05:00 PM",
+        "location": "Virtual / Zoom",
+        "description": "An interactive session where established Rwandan business leaders share their journeys and mentor youth from our entrepreneurship programs.",
+        "category": "Workshop"
+      }
+    ]
+  },
+  "donate": {
+    "title": "Invest in a Brighter Future",
+    "subtitle": "Your contribution directly empowers vulnerable children and youth in Rwanda to become self-reliant citizens.",
+    "trustTitle": "Why Trust Us?",
+    "trustDescription": "90% of every donation goes directly to our community programs. We are committed to transparency and measurable impact.",
+    "tiers": {
+      "title": "Choose Your Impact",
+      "oneTime": "One-time",
+      "monthly": "Monthly",
+      "custom": "Custom Amount",
+      "currency": "$",
+      "items": [
+        {
+          "amount": 25,
+          "label": "School Supplies",
+          "description": "Provides a child with a school bag, books, and uniforms for a full year."
+        },
+        {
+          "amount": 50,
+          "label": "Vocational Training",
+          "description": "Supports a young mother for a month in our tailoring or business skills program."
+        },
+        {
+          "amount": 100,
+          "label": "Entrepreneur Hub",
+          "description": "Covers digital literacy training and mentorship for 5 youth entrepreneurs."
+        }
+      ]
+    },
+    "form": {
+      "amountLabel": "Enter Amount",
+      "nameLabel": "Full Name",
+      "emailLabel": "Email Address",
+      "submitButton": "Complete Donation",
+      "secureNote": "Secure encrypted payment processing"
+    },
+    "impact": {
+      "title": "Our Collective Impact",
+      "stats": [
+        { "value": "2000+", "label": "Children Supported" },
+        { "value": "500+", "label": "Young Mothers Empowered" },
+        { "value": "15+", "label": "Active Communities" }
+      ]
+    }
+  }
+}
