@@ -60,5 +60,128 @@
     "vision": "Vision",
     "learnMore": "En savoir plus",
     "applyNow": "Postuler maintenant"
+  },
+  "news": {
+    "title": "Actualités",
+    "subtitle": "Restez informé de nos dernières activités et de l'impact que nous créons ensemble.",
+    "viewAll": "Voir toutes les actualités",
+    "readMore": "Lire la suite",
+    "imagePlaceholder": "Espace réservé à l'image",
+    "categories": {
+      "all": "Tout",
+      "empowerment": "Autonomisation",
+      "education": "Éducation",
+      "innovation": "Innovation",
+      "success-story": "Histoire de réussite"
+    },
+    "items": [
+      {
+        "id": "news-1",
+        "title": "Autonomisation des jeunes mères : Lancement d'un nouveau cycle de formation",
+        "date": "15-05-2026",
+        "category": "empowerment",
+        "summary": "GNE lance son 5ème cycle de formation professionnelle à Kigali, soutenant 50 jeunes mères avec des compétences en couture et en gestion.",
+        "image": "/images/news/training-2026.jpg"
+      },
+      {
+        "id": "news-2",
+        "title": "Succès de la campagne de rentrée scolaire : 200 enfants soutenus",
+        "date": "10-04-2026",
+        "category": "education",
+        "summary": "Grâce à nos donateurs, nous avons fourni des fournitures scolaires et un soutien aux frais de scolarité pour 200 enfants dans les zones rurales.",
+        "image": "/images/news/education-2026.jpg"
+      },
+      {
+        "id": "news-3",
+        "title": "Hub d'Innovation Jeunesse GNE : Réduire la fracture numérique",
+        "date": "22-03-2026",
+        "category": "innovation",
+        "summary": "Notre nouveau centre à Musanze est désormais ouvert, offrant un accès à internet et un mentorat pour les jeunes entrepreneurs en herbe.",
+        "image": "/images/news/hub-2026.jpg"
+      }
+    ]
+  },
+  "events": {
+    "title": "Événements à venir",
+    "subtitle": "Rejoignez-nous et faites partie du changement. Participez à nos prochains événements et ateliers communautaires.",
+    "viewAll": "Voir tous les événements",
+    "register": "S'inscrire maintenant",
+    "items": [
+      {
+        "id": "event-1",
+        "name": "Sommet annuel de la jeunesse pour la paix et la réconciliation",
+        "date": "20-06-2026",
+        "time": "09:00 - 16:00",
+        "location": "Centre de Convention de Kigali, Rwanda",
+        "description": "Rassembler 500 jeunes pour discuter de la consolidation de la paix et du leadership communautaire.",
+        "category": "Sommet"
+      },
+      {
+        "id": "event-2",
+        "name": "Marche communautaire pour l'éducation",
+        "date": "05-07-2026",
+        "time": "07:30",
+        "location": "Place du district de Musanze",
+        "description": "Une marche de 5 km pour sensibiliser et collecter des fonds pour nos initiatives d'éducation rurale.",
+        "category": "Collecte de fonds"
+      },
+      {
+        "id": "event-3",
+        "name": "Journée de mentorat en entrepreneuriat",
+        "date": "12-08-2026",
+        "time": "14:00 - 17:00",
+        "location": "Virtuel / Zoom",
+        "description": "Une session interactive où des chefs d'entreprise rwandais partagent leurs parcours et conseillent les jeunes.",
+        "category": "Atelier"
+      }
+    ]
+  },
+  "donate": {
+    "title": "Investissez dans un Avenir Meilleur",
+    "subtitle": "Votre contribution aide directement les enfants et les jeunes vulnérables du Rwanda à devenir des citoyens autonomes.",
+    "trustTitle": "Pourquoi nous faire confiance ?",
+    "trustDescription": "90 % de chaque don va directement à nos programmes communautaires. Nous nous engageons à la transparence et à un impact mesurable.",
+    "tiers": {
+      "title": "Choisissez votre Impact",
+      "oneTime": "Don unique",
+      "monthly": "Mensuel",
+      "custom": "Montant personnalisé",
+      "customPlaceholder": "Entrez le montant",
+      "currency": "€",
+      "description": "Sélectionnez un montant ou saisissez-en un personnalisé.",
+      "items": [
+        {
+          "amount": 25,
+          "label": "Fournitures Scolaires",
+          "description": "Fournit à un enfant un sac d'école, des livres et des uniformes pour une année complète."
+        },
+        {
+          "amount": 50,
+          "label": "Formation Professionnelle",
+          "description": "Soutient une jeune mère pendant un mois dans notre programme de couture ou de compétences en affaires."
+        },
+        {
+          "amount": 100,
+          "label": "Hub d'Entrepreneuriat",
+          "description": "Couvre la formation à la littératie numérique et le mentorat pour 5 jeunes entrepreneurs."
+        }
+      ]
+    },
+    "form": {
+      "amountLabel": "Entrez le montant",
+      "nameLabel": "Nom Complet",
+      "emailLabel": "Adresse E-mail",
+      "submitButton": "Finaliser le Don",
+      "secureNote": "Traitement sécurisé et crypté des paiements"
+    },
+    "impact": {
+      "title": "Notre Impact Collectif",
+      "sidebarTitle": "Impact de votre don",
+      "stats": [
+        { "value": "2000+", "label": "Enfants Soutenus" },
+        { "value": "500+", "label": "Jeunes Mères Autonomisées" },
+        { "value": "15+", "label": "Communautés Actives" }
+      ]
+    }
   }
 }

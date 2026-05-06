@@ -1,0 +1,162 @@
+"use client"
+
+import { useState } from "react"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Badge } from "@/components/ui/badge"
+import en from "@/translations/en.json"
+
+export default function DonatePage() {
+  const { donate } = en
+  const [amount, setAmount] = useState<number | string>("")
+  const [selectedTier, setSelectedTier] = useState<number | null>(null)
+
+  const handleTierSelect = (value: number) => {
+    setSelectedTier(value)
+    setAmount(value)
+  }
+
+  return (
+    <main className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section className="bg-primary/5 py-16 md:py-24">
+        <div className="container mx-auto px-4 text-center">
+          <Badge className="mb-4 px-4 py-1 text-sm font-semibold uppercase tracking-wider">Support GNE</Badge>
+          <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-primary md:text-5xl lg:text-6xl">
+            {donate.title}
+          </h1>
+          <p className="mx-auto max-w-2xl text-lg text-muted-foreground md:text-xl">
+            {donate.subtitle}
+          </p>
+        </div>
+      </section>
+
+      <div className="container mx-auto -mt-12 px-4 pb-24">
+        <div className="grid gap-12 lg:grid-cols-3">
+          {/* Donation Selection & Form */}
+          <div className="lg:col-span-2">
+            <Card className="shadow-lg">
+              <CardHeader className="border-b bg-muted/30 px-6 py-8">
+                <CardTitle className="text-2xl">{donate.tiers.title}</CardTitle>
+                <CardDescription>Select an amount or enter a custom one.</CardDescription>
+              </CardHeader>
+              <CardContent className="p-6 md:p-8">
+                <Tabs defaultValue="one-time" className="mb-8">
+                  <TabsList className="grid w-full grid-cols-2">
+                    <TabsTrigger value="one-time">{donate.tiers.oneTime}</TabsTrigger>
+                    <TabsTrigger value="monthly">{donate.tiers.monthly}</TabsTrigger>
+                  </TabsList>
+                </Tabs>
+
+                <div className="mb-8 grid gap-4 md:grid-cols-3">
+                  {donate.tiers.items.map((tier) => (
+                    <button
+                      key={tier.amount}
+                      onClick={() => handleTierSelect(tier.amount)}
+                      className={`relative flex flex-col items-center justify-center rounded-xl border-2 p-6 transition-all hover:bg-primary/5 ${
+                        selectedTier === tier.amount ? "border-primary bg-primary/5" : "border-border"
+                      }`}
+                    >
+                      <span className="mb-1 text-2xl font-bold">{donate.tiers.currency}{tier.amount}</span>
+                      <span className="text-sm font-medium text-muted-foreground">{tier.label}</span>
+                    </button>
+                  ))}
+                </div>
+
+                <div className="mb-8">
+                  <Label htmlFor="custom-amount" className="mb-2 block font-semibold">
+                    {donate.tiers.custom}
+                  </Label>
+                  <div className="relative">
+                    <span className="absolute left-4 top-1/2 -translate-y-1/2 text-lg font-bold text-muted-foreground">
+                      {donate.tiers.currency}
+                    </span>
+                    <Input
+                      id="custom-amount"
+                      type="number"
+                      placeholder="Enter amount"
+                      className="pl-10 text-lg h-12"
+                      value={amount}
+                      onChange={(e) => {
+                        setAmount(e.target.value)
+                        setSelectedTier(null)
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <div className="grid gap-6 md:grid-cols-2">
+                  <div className="space-y-2">
+                    <Label htmlFor="name" className="font-semibold">{donate.form.nameLabel}</Label>
+                    <Input id="name" placeholder="John Doe" className="h-11" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="email" className="font-semibold">{donate.form.emailLabel}</Label>
+                    <Input id="email" type="email" placeholder="john@example.com" className="h-11" />
+                  </div>
+                </div>
+              </CardContent>
+              <CardFooter className="flex flex-col items-center gap-4 border-t bg-muted/30 p-6 md:p-8">
+                <Button size="lg" className="w-full h-14 text-lg font-bold">
+                  {donate.form.submitButton}
+                </Button>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                  <span>{donate.form.secureNote}</span>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+
+          {/* Impact & Trust Sidebar */}
+          <div className="space-y-8">
+            <Card className="bg-primary text-primary-foreground">
+              <CardHeader>
+                <CardTitle>{donate.trustTitle}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="opacity-90 leading-relaxed">
+                  {donate.trustDescription}
+                </p>
+                <div className="mt-8 space-y-6">
+                  {donate.impact.stats.map((stat, idx) => (
+                    <div key={idx} className="flex flex-col border-l-2 border-primary-foreground/30 pl-4">
+                      <span className="text-3xl font-bold">{stat.value}</span>
+                      <span className="text-sm opacity-80 uppercase tracking-wide">{stat.label}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-xl">Impact of your gift</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                {donate.tiers.items.map((tier, idx) => (
+                  <div key={idx} className="flex gap-4 items-start">
+                    <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-secondary/20 text-secondary">
+                      <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold">{donate.tiers.currency}{tier.amount} - {tier.label}</p>
+                      <p className="text-sm text-muted-foreground">{tier.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </main>
+  )
+}
