@@ -1,9 +1,72 @@
 {
+  "about": {
+    "title": "About Us",
+    "subtitle": "Investing in the human capital of Rwanda's youth since 1999.",
+    "history": {
+      "title": "Our History",
+      "content": "Founded in September 1999 in Butare (Huye), Rwanda, Groupe Nos Enfants (GNE) was born from the vision of Father Modeste Mungwarareba, Dr. Laurien Ntezimana, and Ms. Antoinette Bruttin. Emerging in the aftermath of the 1994 Genocide, GNE was established to contribute to national reconstruction by focusing on the protection and empowerment of vulnerable children and youth."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "To unlock the human potential of vulnerable youth through integrated solutions combining knowledge, hands-on skills, and entrepreneurship."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "content": "A society where every child and young person is protected, enjoys equal opportunities, and becomes a self-reliant driver of sustainable development."
+    },
+    "values": {
+      "title": "Our Core Values",
+      "items": [
+        "Child Protection & Well-being",
+        "Inclusive & Transformative Education",
+        "Youth Empowerment & Community Engagement",
+        "Social Innovation",
+        "Strengthening Family & Community Systems"
+      ]
+    }
+  },
+  "programs": {
+    "title": "Our Programs & Services",
+    "subtitle": "Providing integrated solutions to unlock the potential of Rwanda's youth.",
+    "list": [
+      {
+        "id": "scholarship",
+        "title": "Scholarship Programme",
+        "description": "Academic support for gifted but vulnerable youth in secondary education, ensuring that financial barriers don't stand in the way of excellence.",
+        "features": ["Tuition coverage", "School materials", "Mentorship"]
+      },
+      {
+        "id": "vocational",
+        "title": "Vocational Training (FormPro)",
+        "description": "Career orientation and a intensive 6-month skills cycle designed for school dropouts to gain practical, marketable skills.",
+        "features": ["Technical skills", "Soft skills", "Job placement support"]
+      },
+      {
+        "id": "young-mothers",
+        "title": "Dignity for Young Mothers",
+        "description": "Comprehensive reintegration and economic empowerment programs for adolescent mothers, helping them rebuild their lives and support their children.",
+        "features": ["Psychosocial support", "Skills training", "Childcare assistance"]
+      },
+      {
+        "id": "social-incubation",
+        "title": "Social Incubation (ICYARI/NEST)",
+        "description": "Business incubation and mentorship for women entrepreneurs in agribusiness and crafts, fostering innovation and self-reliance.",
+        "features": ["Entrepreneurship training", "Mentorship", "Market access"]
+      }
+    ]
+  },
+  "common": {
+    "mission": "Mission",
+    "vision": "Vision",
+    "learnMore": "Learn More",
+    "applyNow": "Apply Now"
+  },
   "news": {
-    "title": "News & Updates",
-    "subtitle": "Stay informed about our latest activities and the impact we're making together.",
-    "viewAll": "View all news",
-    "readMore": "Read more",
+    "title": "Latest News",
+    "subtitle": "Stay updated on our latest activities and the impact we create together.",
+    "viewAll": "View All News",
+    "readMore": "Read More",
+    "imagePlaceholder": "Image Placeholder",
     "categories": {
       "all": "All",
       "empowerment": "Empowerment",
@@ -14,7 +77,7 @@
     "items": [
       {
         "id": "news-1",
-        "title": "Empowering Young Mothers: New Vocational Training Cycle Begins",
+        "title": "Empowering Young Mothers: Launch of a New Training Cycle",
         "date": "2026-05-15",
         "category": "empowerment",
         "summary": "GNE launches its 5th vocational training cycle in Kigali, supporting 50 young mothers with tailoring and business skills to achieve financial independence.",
@@ -23,7 +86,7 @@
       },
       {
         "id": "news-2",
-        "title": "Back-to-School Drive Success: 200 Children Supported",
+        "title": "Back-to-School Campaign Success: 200 Children Supported",
         "date": "2026-04-10",
         "category": "education",
         "summary": "Thanks to our generous donors, we've successfully provided school supplies and tuition support for 200 children in rural districts for the upcoming term.",
@@ -44,49 +107,51 @@
   "events": {
     "title": "Upcoming Events",
     "subtitle": "Join us and be part of the change. Participate in our upcoming community events and workshops.",
-    "viewAll": "View all events",
+    "viewAll": "View All Events",
     "register": "Register Now",
     "items": [
       {
         "id": "event-1",
-        "name": "Annual Peace & Reconciliation Youth Summit",
+        "name": "Annual Youth Peace and Reconciliation Summit",
         "date": "2026-06-20",
-        "time": "09:00 AM - 04:00 PM",
+        "time": "09:00 - 16:00",
         "location": "Kigali Convention Centre, Rwanda",
-        "description": "Bringing together 500 youth to discuss peacebuilding, community leadership, and social cohesion in a post-conflict society.",
+        "description": "Bringing together 500 youth to discuss peacebuilding and community leadership.",
         "category": "Summit"
       },
       {
         "id": "event-2",
         "name": "Community Walk for Education",
         "date": "2026-07-05",
-        "time": "07:30 AM",
+        "time": "07:30",
         "location": "Musanze District Square",
-        "description": "A 5km community walk to raise awareness and funds for our rural education initiatives and school feeding programs.",
+        "description": "A 5km walk to raise awareness and funds for our rural education initiatives.",
         "category": "Fundraiser"
       },
       {
         "id": "event-3",
         "name": "Entrepreneurship Mentorship Day",
         "date": "2026-08-12",
-        "time": "02:00 PM - 05:00 PM",
+        "time": "14:00 - 17:00",
         "location": "Virtual / Zoom",
-        "description": "An interactive session where established Rwandan business leaders share their journeys and mentor youth from our entrepreneurship programs.",
+        "description": "An interactive session where Rwandan business leaders share their journeys and advise youth.",
         "category": "Workshop"
       }
     ]
   },
   "donate": {
     "title": "Invest in a Brighter Future",
-    "subtitle": "Your contribution directly empowers vulnerable children and youth in Rwanda to become self-reliant citizens.",
+    "subtitle": "Your contribution directly helps vulnerable children and youth in Rwanda become self-reliant citizens.",
     "trustTitle": "Why Trust Us?",
     "trustDescription": "90% of every donation goes directly to our community programs. We are committed to transparency and measurable impact.",
     "tiers": {
       "title": "Choose Your Impact",
-      "oneTime": "One-time",
+      "oneTime": "One-time Donation",
       "monthly": "Monthly",
       "custom": "Custom Amount",
+      "customPlaceholder": "Enter amount",
       "currency": "$",
+      "description": "Select an amount or enter a custom one.",
       "items": [
         {
           "amount": 25,
@@ -96,24 +161,25 @@
         {
           "amount": 50,
           "label": "Vocational Training",
-          "description": "Supports a young mother for a month in our tailoring or business skills program."
+          "description": "Supports a young mother for one month in our sewing or business skills program."
         },
         {
           "amount": 100,
-          "label": "Entrepreneur Hub",
-          "description": "Covers digital literacy training and mentorship for 5 youth entrepreneurs."
+          "label": "Entrepreneurship Hub",
+          "description": "Covers digital literacy training and mentorship for 5 young entrepreneurs."
         }
       ]
     },
     "form": {
-      "amountLabel": "Enter Amount",
+      "amountLabel": "Enter amount",
       "nameLabel": "Full Name",
       "emailLabel": "Email Address",
-      "submitButton": "Complete Donation",
-      "secureNote": "Secure encrypted payment processing"
+      "submitButton": "Finalize Donation",
+      "secureNote": "Secure and encrypted payment processing"
     },
     "impact": {
       "title": "Our Collective Impact",
+      "sidebarTitle": "Impact of your gift",
       "stats": [
         { "value": "2000+", "label": "Children Supported" },
         { "value": "500+", "label": "Young Mothers Empowered" },

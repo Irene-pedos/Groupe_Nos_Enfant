@@ -1,9 +1,72 @@
 {
+  "about": {
+    "title": "À Propos de Nous",
+    "subtitle": "Investir dans le capital humain de la jeunesse rwandaise depuis 1999.",
+    "history": {
+      "title": "Notre Histoire",
+      "content": "Fondé en septembre 1999 à Butare (Huye), au Rwanda, le Groupe Nos Enfants (GNE) est né de la vision du Père Modeste Mungwarareba, du Dr Laurien Ntezimana et de Mme Antoinette Bruttin. Émergeant au lendemain du génocide de 1994, le GNE a été créé pour contribuer à la reconstruction nationale en se concentrant sur la protection et l'autonomisation des enfants et des jeunes vulnérables."
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "content": "Libérer le potentiel humain des jeunes vulnérables grâce à des solutions intégrées combinant connaissances, compétences pratiques et entrepreneuriat."
+    },
+    "vision": {
+      "title": "Notre Vision",
+      "content": "Une société où chaque enfant et chaque jeune est protégé, bénéficie de l'égalité des chances et devient un moteur autonome du développement durable."
+    },
+    "values": {
+      "title": "Nos Valeurs Fondamentales",
+      "items": [
+        "Protection et bien-être de l'enfance",
+        "Éducation inclusive et transformatrice",
+        "Autonomisation des jeunes et engagement communautaire",
+        "Innovation sociale",
+        "Renforcement des systèmes familiaux et communautaires"
+      ]
+    }
+  },
+  "programs": {
+    "title": "Nos Programmes et Services",
+    "subtitle": "Fournir des solutions intégrées pour libérer le potentiel de la jeunesse rwandaise.",
+    "list": [
+      {
+        "id": "scholarship",
+        "title": "Programme de Bourses",
+        "description": "Soutien académique pour les jeunes doués mais vulnérables dans l'enseignement secondaire, garantissant que les barrières financières ne fassent pas obstacle à l'excellence.",
+        "features": ["Couverture des frais de scolarité", "Matériel scolaire", "Mentorat"]
+      },
+      {
+        "id": "vocational",
+        "title": "Formation Professionnelle (FormPro)",
+        "description": "Orientation de carrière et cycle de compétences intensif de 6 mois conçu pour les décrocheurs scolaires afin d'acquérir des compétences pratiques et commercialisables.",
+        "features": ["Compétences techniques", "Compétences relationnelles", "Soutien au placement professionnel"]
+      },
+      {
+        "id": "young-mothers",
+        "title": "Dignité pour les Jeunes Mères",
+        "description": "Programmes complets de réintégration et d'autonomisation économique pour les mères adolescentes, les aidant à reconstruire leur vie et à soutenir leurs enfants.",
+        "features": ["Soutien psychosocial", "Formation aux compétences", "Aide à la garde d'enfants"]
+      },
+      {
+        "id": "social-incubation",
+        "title": "Incubation Sociale (ICYARI/NEST)",
+        "description": "Incubation d'entreprises et mentorat pour les femmes entrepreneures dans l'agro-industrie et l'artisanat, favorisant l'innovation et l'autonomie.",
+        "features": ["Formation à l'entrepreneuriat", "Mentorat", "Accès au marché"]
+      }
+    ]
+  },
+  "common": {
+    "mission": "Mission",
+    "vision": "Vision",
+    "learnMore": "En savoir plus",
+    "applyNow": "Postuler maintenant"
+  },
   "news": {
     "title": "Actualités",
     "subtitle": "Restez informé de nos dernières activités et de l'impact que nous créons ensemble.",
     "viewAll": "Voir toutes les actualités",
     "readMore": "Lire la suite",
+    "imagePlaceholder": "Espace réservé à l'image",
     "categories": {
       "all": "Tout",
       "empowerment": "Autonomisation",
@@ -86,7 +149,9 @@
       "oneTime": "Don unique",
       "monthly": "Mensuel",
       "custom": "Montant personnalisé",
+      "customPlaceholder": "Entrez le montant",
       "currency": "€",
+      "description": "Sélectionnez un montant ou saisissez-en un personnalisé.",
       "items": [
         {
           "amount": 25,
@@ -114,6 +179,7 @@
     },
     "impact": {
       "title": "Notre Impact Collectif",
+      "sidebarTitle": "Impact de votre don",
       "stats": [
         { "value": "2000+", "label": "Enfants Soutenus" },
         { "value": "500+", "label": "Jeunes Mères Autonomisées" },
