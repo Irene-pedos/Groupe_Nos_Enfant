@@ -1,9 +1,10 @@
+import { getDictionary } from "@/lib/dictionary"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import en from "@/translations/en.json"
 
-export default function NewsPage() {
-  const { news, events } = en
+export default async function NewsPage() {
+  const dict = await getDictionary("en")
+  const { news, events } = dict
 
   return (
     <main className="container mx-auto px-4 py-12">
@@ -20,11 +21,11 @@ export default function NewsPage() {
             <div key={item.id} className="group flex flex-col overflow-hidden rounded-xl border bg-card text-card-foreground shadow-sm transition-all hover:shadow-md">
               <div className="aspect-video w-full bg-muted flex items-center justify-center text-muted-foreground">
                 {/* Placeholder for images */}
-                <span>Image Placeholder</span>
+                <span>{news.imagePlaceholder}</span>
               </div>
               <div className="flex flex-1 flex-col p-6">
                 <div className="mb-2 flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-primary">
-                  <span>{item.category}</span>
+                  <span>{(news.categories as any)[item.category] || item.category}</span>
                   <span className="text-muted-foreground">•</span>
                   <span className="text-muted-foreground">{item.date}</span>
                 </div>
@@ -57,7 +58,7 @@ export default function NewsPage() {
           {events.items.map((event) => (
             <div key={event.id} className="flex flex-col rounded-xl border bg-card p-6 shadow-sm transition-all hover:shadow-md md:flex-row md:gap-6">
               <div className="mb-4 flex h-20 w-20 shrink-0 flex-col items-center justify-center rounded-lg bg-primary/10 text-primary md:mb-0">
-                <span className="text-xs font-bold uppercase">{new Date(event.date).toLocaleString('default', { month: 'short' })}</span>
+                <span className="text-xs font-bold uppercase">{new Date(event.date).toLocaleString('en-US', { month: 'short' })}</span>
                 <span className="text-2xl font-black">{new Date(event.date).getDate()}</span>
               </div>
               <div className="flex flex-1 flex-col">
